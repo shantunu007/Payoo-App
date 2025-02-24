@@ -8,6 +8,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-slate-800">
-    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200"></section>
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-center items-center mt-6">
+                <div class="mt-10 flex justify-center items-center relative w-9/12 mb-10">
+                    <img class="absolute w-48" src="images/Rectangle 1.png" alt="">
+                    <img class="w-16" src="images/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <!-- login section -->
+
+        <div class="min-h-screen rounded-xl">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black font-semibold">Mobile Number</span>
+                    </label>
+                    <input type="number" placeholder="Enter your number" class="input rounded-full bg-gray-100">
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black font-semibold">4 Digit Pin</span>
+                    </label>
+                    <input type="text" placeholder="Enter 4 Digit Pin" class="input rounded-full bg-gray-100" required />
+                    <!-- <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label> -->
+                  </div>
+                  <button id="login-btn" class="btn btn-primary rounded-full">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script src="script/login.js"></script>
 </body>
 </html>
